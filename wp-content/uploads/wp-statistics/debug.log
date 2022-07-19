@@ -1,0 +1,10 @@
+
+2022-04-19 10:21:03: Duplicate entry '2022-04-20' for key 'wp_statistics_visit.unique_date'
+2022-04-20 03:13:58: {"code":"download_geoip","type":"city","message":"cURL error 28: Operation timed out after 60000 milliseconds with 15502099 out of 32626589 bytes received"}
+2022-04-20 03:14:14: {"code":"download_geoip","type":"city","message":"cURL error 28: Operation timed out after 60000 milliseconds with 14453689 out of 32626589 bytes received"}
+2022-04-20 03:14:28: {"code":"download_geoip","type":"city","message":"cURL error 28: Operation timed out after 60000 milliseconds with 14158890 out of 32626589 bytes received"}
+2022-04-23 06:24:49: {"code":"download_geoip","type":"city","message":"cURL error 6: Could not resolve host: raw.githubusercontent.com"}
+2022-05-09 08:50:17: Duplicate entry '2022-05-10' for key 'wp_statistics_visit.unique_date'
+2022-05-29 05:10:25: Duplicate entry '2022-05-30' for key 'wp_statistics_visit.unique_date'
+2022-06-09 08:46:19: Duplicate entry '2022-06-10' for key 'wp_statistics_visit.unique_date'
+2022-06-20 11:40:38: Duplicate entry '2022-06-21' for key 'wp_statistics_visit.unique_date'

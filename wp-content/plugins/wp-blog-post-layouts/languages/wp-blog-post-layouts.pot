@@ -1,0 +1,830 @@
+# Copyright (C) 2020 Codevibrant
+# This file is distributed under the same license as the WP Blog Post Layouts plugin.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Blog Post Layouts 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-blog-post-"
+"layouts\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-12-06 07:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: wp-blog-post-layouts\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
+
+#: admin/class-blog-post-layouts-admin.php:225
+msgid ""
+"! Having great experience using WP Blog Post Layouts? We hope you are happy "
+"with everything that the plugin has to offer. If you can spare a minute, "
+"please help us leaving a 5-star review on wordpress.org. By spreading love, "
+"we continue to develop new amazing features in the future, for free!"
+msgstr ""
+
+#: wp-blog-post-layouts.php:101
+msgid ""
+"\"%1$s\" in your site. \"%2$s\" need be installed and activated for better "
+"compatibility."
+msgstr ""
+
+#: admin/partials/content-review.php:15
+msgid "%1s Send us your Feedback %2s"
+msgstr ""
+
+#: admin/partials/content-review.php:20
+msgid "%1sThanks for choosing WP Blog Post Layouts%2s"
+msgstr ""
+
+#: admin/partials/content-review.php:17
+#, php-format
+msgid ""
+"%2sPlease let us know about your experience with Blog Post Layout so far. We "
+"love to hear positive things but we're also thankful for the negatives. Your "
+"feedback will alert us to problems and help us improve our WP Blog Post "
+"Layouts.\n"
+"            Are you happy with us? Would you mind taking a moment to leave "
+"us a rating? It will only take a minute. We look forward to receiving "
+"feedback from you to make WP Blog Post Layouts even more useful for you and "
+"others. !%2s"
+msgstr ""
+
+#: includes/src/grid/layout-three/layout-three.php:103
+#: includes/src/grid/layout-two/layout-two.php:119
+#: includes/src/list/layout-three/layout-three.php:103
+#: includes/src/masonry/layout-three/layout-three.php:103
+#: includes/src/masonry/layout-two/layout-two.php:120
+msgid ","
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:171
+msgid "20+ total post layouts"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:175
+msgid "5 Block Columns"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:176
+msgid "5 Block Title Layout"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:172
+msgid "8 layout variations in each layout block"
+msgstr ""
+
+#: includes/src/grid/element.php:179 includes/src/list/element.php:179
+#: includes/src/masonry/element.php:178
+msgid "Add label here..."
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:182
+msgid "Advanced Typography Options"
+msgstr ""
+
+#: includes/src/grid/element.php:40 includes/src/list/element.php:40
+#: includes/src/masonry/element.php:40
+msgid "All"
+msgstr ""
+
+#: includes/src/grid/element.php:371 includes/src/list/element.php:369
+#: includes/src/masonry/element.php:370
+msgid "Allow margin between each post"
+msgstr ""
+
+#: includes/src/grid/element.php:214 includes/src/list/element.php:214
+#: includes/src/masonry/element.php:213
+msgid "Ascending"
+msgstr ""
+
+#: includes/src/grid/element.php:953 includes/src/list/element.php:946
+#: includes/src/masonry/element.php:944
+msgid "Background Color"
+msgstr ""
+
+#: includes/src/grid/element.php:968 includes/src/list/element.php:961
+#: includes/src/masonry/element.php:959
+msgid "Background Hover Color"
+msgstr ""
+
+#: includes/src/grid/element.php:355 includes/src/list/element.php:355
+#: includes/src/masonry/element.php:354
+msgid "Block Column"
+msgstr ""
+
+#: includes/src/grid/element.php:419 includes/src/grid/element.php:452
+#: includes/src/list/element.php:417 includes/src/list/element.php:450
+#: includes/src/masonry/element.php:418 includes/src/masonry/element.php:451
+msgid "Block Title"
+msgstr ""
+
+#: includes/src/grid/element.php:83 includes/src/list/element.php:83
+#: includes/src/masonry/element.php:82
+msgid "Block Title Layout"
+msgstr ""
+
+#: includes/src/grid/element.php:487 includes/src/grid/element.php:1037
+#: includes/src/list/element.php:485 includes/src/list/element.php:1030
+#: includes/src/masonry/element.php:486 includes/src/masonry/element.php:1028
+msgid "Border Color"
+msgstr ""
+
+#: includes/src/grid/element.php:1067 includes/src/list/element.php:1060
+#: includes/src/masonry/element.php:1058
+msgid "Border Hover Color"
+msgstr ""
+
+#: includes/src/grid/element.php:983 includes/src/list/element.php:976
+#: includes/src/masonry/element.php:974
+msgid "Border Type"
+msgstr ""
+
+#: includes/src/grid/element.php:1004 includes/src/list/element.php:997
+#: includes/src/masonry/element.php:995
+msgid "Border Weight"
+msgstr ""
+
+#: includes/src/grid/element.php:842 includes/src/grid/element.php:905
+#: includes/src/list/element.php:836 includes/src/list/element.php:899
+#: includes/src/masonry/element.php:837 includes/src/masonry/element.php:900
+msgid "Button"
+msgstr ""
+
+#: includes/src/grid/element.php:177 includes/src/list/element.php:177
+#: includes/src/masonry/element.php:176
+msgid "Button Label"
+msgstr ""
+
+#: includes/src/grid/layout-three/layout-three.php:131
+#: includes/src/masonry/layout-three/layout-three.php:131
+msgid "by "
+msgstr ""
+
+#: includes/src/grid/layout-one/layout-one.php:95
+#: includes/src/grid/layout-two/layout-two.php:109
+#: includes/src/list/layout-one/layout-one.php:109
+#: includes/src/list/layout-two/layout-two.php:109
+#: includes/src/masonry/layout-one/layout-one.php:98
+#: includes/src/masonry/layout-two/layout-two.php:110
+msgid "By:"
+msgstr ""
+
+#: includes/src/grid/element.php:130 includes/src/list/element.php:130
+#: includes/src/masonry/element.php:129
+msgid "Category"
+msgstr ""
+
+#: includes/src/grid/element.php:108 includes/src/grid/element.php:523
+#: includes/src/grid/element.php:639 includes/src/grid/element.php:758
+#: includes/src/grid/element.php:860 includes/src/list/element.php:108
+#: includes/src/list/element.php:521 includes/src/list/element.php:637
+#: includes/src/list/element.php:753 includes/src/list/element.php:854
+#: includes/src/masonry/element.php:107 includes/src/masonry/element.php:522
+#: includes/src/masonry/element.php:638 includes/src/masonry/element.php:754
+#: includes/src/masonry/element.php:855
+msgid "Center"
+msgstr ""
+
+#. Author of the plugin
+msgid "CodeVibrant"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:177
+msgid "Color Options"
+msgstr ""
+
+#: includes/src/grid/element.php:157 includes/src/grid/element.php:740
+#: includes/src/list/element.php:157 includes/src/list/element.php:735
+#: includes/src/masonry/element.php:156 includes/src/masonry/element.php:736
+msgid "Content"
+msgstr ""
+
+#: includes/src/grid/element.php:165 includes/src/list/element.php:165
+#: includes/src/masonry/element.php:164
+msgid "Content Length"
+msgstr ""
+
+#: includes/src/grid/element.php:152 includes/src/list/element.php:152
+#: includes/src/masonry/element.php:151
+msgid "Content Type"
+msgstr ""
+
+#: includes/src/grid/element.php:803 includes/src/list/element.php:798
+#: includes/src/masonry/element.php:799
+msgid "Content/Excerpt"
+msgstr ""
+
+#: admin/partials/content-dashboard.php:28
+msgid "Create first template"
+msgstr ""
+
+#: includes/src/grid/element.php:19
+msgid "CV Grid Post Layout"
+msgstr ""
+
+#: includes/src/list/element.php:19
+msgid "CV List Post Layout"
+msgstr ""
+
+#: includes/src/masonry/element.php:19
+msgid "CV Masonry Post Layout"
+msgstr ""
+
+#: includes/src/grid/element.php:990 includes/src/list/element.php:983
+#: includes/src/masonry/element.php:981
+msgid "Dashed"
+msgstr ""
+
+#: includes/src/grid/element.php:201 includes/src/list/element.php:201
+#: includes/src/masonry/element.php:200
+msgid "Date"
+msgstr ""
+
+#: includes/src/grid/element.php:215 includes/src/list/element.php:215
+#: includes/src/masonry/element.php:214
+msgid "Descending"
+msgstr ""
+
+#: includes/gutenberg.php:937
+msgid "Different Sized Featured Images"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:274
+msgid "Dismiss this notice"
+msgstr ""
+
+#: admin/partials/content-help.php:8
+msgid "Do you need any help related to our plugin ?"
+msgstr ""
+
+#: admin/partials/content-dashboard.php:41 admin/partials/content-help.php:20
+msgid "Documentation"
+msgstr ""
+
+#: includes/src/grid/element.php:989 includes/src/list/element.php:982
+#: includes/src/masonry/element.php:980
+msgid "Dotted"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:180
+msgid "Element Sorting"
+msgstr ""
+
+#: includes/src/grid/element.php:76 includes/src/list/element.php:76
+#: includes/src/masonry/element.php:75
+msgid "Enter title"
+msgstr ""
+
+#: includes/src/grid/element.php:156 includes/src/list/element.php:156
+#: includes/src/masonry/element.php:155
+msgid "Excerpt"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:179
+msgid "Fallback Image Option"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:169
+msgid "Features"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:186
+msgid "Features added in every updates "
+msgstr ""
+
+#: includes/src/grid/element.php:363 includes/src/masonry/element.php:362
+msgid "Five"
+msgstr ""
+
+#: includes/src/grid/element.php:472 includes/src/grid/element.php:588
+#: includes/src/grid/element.php:705 includes/src/grid/element.php:824
+#: includes/src/grid/element.php:923 includes/src/list/element.php:470
+#: includes/src/list/element.php:586 includes/src/list/element.php:702
+#: includes/src/list/element.php:818 includes/src/list/element.php:916
+#: includes/src/masonry/element.php:471 includes/src/masonry/element.php:587
+#: includes/src/masonry/element.php:703 includes/src/masonry/element.php:819
+#: includes/src/masonry/element.php:914
+msgid "Font Color"
+msgstr ""
+
+#: includes/src/grid/element.php:429 includes/src/grid/element.php:545
+#: includes/src/grid/element.php:661 includes/src/grid/element.php:780
+#: includes/src/grid/element.php:882 includes/src/list/element.php:427
+#: includes/src/list/element.php:543 includes/src/list/element.php:659
+#: includes/src/list/element.php:775 includes/src/list/element.php:876
+#: includes/src/masonry/element.php:428 includes/src/masonry/element.php:544
+#: includes/src/masonry/element.php:660 includes/src/masonry/element.php:776
+#: includes/src/masonry/element.php:877
+msgid "Font Family"
+msgstr ""
+
+#: includes/src/grid/element.php:362 includes/src/masonry/element.php:361
+msgid "Four"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:265
+msgid ""
+"Frequent updates available with quick issue handling and get every updates "
+"with required features added"
+msgstr ""
+
+#: includes/src/grid/element.php:66 includes/src/list/element.php:66
+#: includes/src/masonry/element.php:65
+msgid "General Setting"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:244
+msgid "Get plugin support question?"
+msgstr ""
+
+#: wp-blog-post-layouts.php:68
+msgid "Get started"
+msgstr ""
+
+#: admin/partials/content-dashboard.php:9
+msgid "Get Started with WP Blog Post Layouts"
+msgstr ""
+
+#: admin/partials/content-review.php:8
+msgid "Give a review & motivate us"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:168
+msgid "Go Premium"
+msgstr ""
+
+#: wp-blog-post-layouts.php:103
+msgid "Gutenberg Blocks"
+msgstr ""
+
+#: wp-blog-post-layouts.php:102
+msgid "Gutenberg is not installed."
+msgstr ""
+
+#: admin/partials/content-help.php:35
+msgid "Here are our some plugin related latest blogs."
+msgstr ""
+
+#: includes/src/grid/element.php:226 includes/src/grid/element.php:228
+#: includes/src/grid/element.php:240 includes/src/grid/element.php:242
+#: includes/src/grid/element.php:254 includes/src/grid/element.php:256
+#: includes/src/grid/element.php:268 includes/src/grid/element.php:270
+#: includes/src/grid/element.php:282 includes/src/grid/element.php:284
+#: includes/src/grid/element.php:330 includes/src/grid/element.php:332
+#: includes/src/grid/element.php:344 includes/src/grid/element.php:346
+#: includes/src/grid/element.php:374 includes/src/grid/element.php:376
+#: includes/src/grid/element.php:400 includes/src/grid/element.php:402
+#: includes/src/list/element.php:226 includes/src/list/element.php:228
+#: includes/src/list/element.php:240 includes/src/list/element.php:242
+#: includes/src/list/element.php:254 includes/src/list/element.php:256
+#: includes/src/list/element.php:268 includes/src/list/element.php:270
+#: includes/src/list/element.php:282 includes/src/list/element.php:284
+#: includes/src/list/element.php:330 includes/src/list/element.php:332
+#: includes/src/list/element.php:344 includes/src/list/element.php:346
+#: includes/src/list/element.php:372 includes/src/list/element.php:374
+#: includes/src/list/element.php:398 includes/src/list/element.php:400
+#: includes/src/masonry/element.php:225 includes/src/masonry/element.php:227
+#: includes/src/masonry/element.php:239 includes/src/masonry/element.php:241
+#: includes/src/masonry/element.php:253 includes/src/masonry/element.php:255
+#: includes/src/masonry/element.php:267 includes/src/masonry/element.php:269
+#: includes/src/masonry/element.php:281 includes/src/masonry/element.php:283
+#: includes/src/masonry/element.php:329 includes/src/masonry/element.php:331
+#: includes/src/masonry/element.php:343 includes/src/masonry/element.php:345
+#: includes/src/masonry/element.php:373 includes/src/masonry/element.php:375
+#: includes/src/masonry/element.php:399 includes/src/masonry/element.php:401
+msgid "Hide"
+msgstr ""
+
+#: includes/src/grid/element.php:603 includes/src/grid/element.php:721
+#: includes/src/grid/element.php:938 includes/src/list/element.php:601
+#: includes/src/list/element.php:717 includes/src/list/element.php:931
+#: includes/src/masonry/element.php:602 includes/src/masonry/element.php:718
+#: includes/src/masonry/element.php:929
+msgid "Hover Color"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://codevibrant.com/"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:239
+msgid "I already did"
+msgstr ""
+
+#: includes/src/grid/element.php:397 includes/src/list/element.php:395
+#: includes/src/masonry/element.php:396
+msgid "Inherit default from plugin typography"
+msgstr ""
+
+#: includes/src/grid/element.php:104 includes/src/grid/element.php:519
+#: includes/src/grid/element.php:635 includes/src/grid/element.php:754
+#: includes/src/grid/element.php:856 includes/src/list/element.php:104
+#: includes/src/list/element.php:517 includes/src/list/element.php:633
+#: includes/src/list/element.php:749 includes/src/list/element.php:850
+#: includes/src/masonry/element.php:103 includes/src/masonry/element.php:518
+#: includes/src/masonry/element.php:634 includes/src/masonry/element.php:750
+#: includes/src/masonry/element.php:851
+msgid "Left"
+msgstr ""
+
+#: includes/src/grid/element.php:304 includes/src/list/element.php:304
+msgid "List Layout Variations"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:262
+msgid ""
+"Looking for extending more features in WP Blog Post Layouts? Unlock "
+"additional features with custom post type support and many other options in "
+"premium version."
+msgstr ""
+
+#: includes/src/masonry/element.php:303
+msgid "Masonry Layout Variations"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:234
+msgid "Maybe later"
+msgstr ""
+
+#: includes/src/grid/element.php:621 includes/src/grid/element.php:684
+#: includes/src/list/element.php:619 includes/src/list/element.php:682
+#: includes/src/masonry/element.php:620 includes/src/masonry/element.php:683
+msgid "Meta"
+msgstr ""
+
+#: includes/src/grid/layout-one/layout-one.php:37
+#: includes/src/grid/layout-three/layout-three.php:37
+#: includes/src/grid/layout-two/layout-two.php:37
+#: includes/src/list/layout-one/layout-one.php:37
+#: includes/src/list/layout-three/layout-three.php:37
+#: includes/src/list/layout-two/layout-two.php:37
+#: includes/src/masonry/layout-one/layout-one.php:37
+#: includes/src/masonry/layout-three/layout-three.php:37
+#: includes/src/masonry/layout-two/layout-two.php:37
+msgid "No posts found"
+msgstr ""
+
+#: includes/src/grid/element.php:987 includes/src/list/element.php:980
+#: includes/src/masonry/element.php:978
+msgid "None"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:181
+msgid "Numerous Google Fonts"
+msgstr ""
+
+#: includes/src/grid/element.php:87 includes/src/grid/element.php:359
+#: includes/src/list/element.php:87 includes/src/list/element.php:359
+#: includes/src/masonry/element.php:86 includes/src/masonry/element.php:358
+msgid "One"
+msgstr ""
+
+#: includes/src/grid/element.php:435 includes/src/grid/element.php:551
+#: includes/src/grid/element.php:667 includes/src/grid/element.php:786
+#: includes/src/grid/element.php:888 includes/src/list/element.php:433
+#: includes/src/list/element.php:549 includes/src/list/element.php:665
+#: includes/src/list/element.php:781 includes/src/list/element.php:882
+#: includes/src/masonry/element.php:434 includes/src/masonry/element.php:550
+#: includes/src/masonry/element.php:666 includes/src/masonry/element.php:782
+#: includes/src/masonry/element.php:883
+msgid "Open Sans"
+msgstr ""
+
+#: includes/class-blog-post-layouts.php:150
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: includes/src/grid/element.php:210 includes/src/list/element.php:210
+#: includes/src/masonry/element.php:209
+msgid "Order"
+msgstr ""
+
+#: includes/src/grid/element.php:197 includes/src/list/element.php:197
+#: includes/src/masonry/element.php:196
+msgid "Order By"
+msgstr ""
+
+#: admin/partials/content-help.php:17
+msgid ""
+"Our documentation gives all the necessary detailed information to get you "
+"started. It provides an elaborated overview on plugin features, how to use "
+"those features and how to troubleshoot errors."
+msgstr ""
+
+#: admin/partials/content-help.php:26
+msgid ""
+"Our TeamSupport specialists are standing by to better understand your "
+"customer support needs and solve your problem for you. We aim to provide "
+"professional technical support  24/7 to satisfy your need and wish. We also "
+"offer support via email and social media."
+msgstr ""
+
+#: includes/src/grid/element.php:1097 includes/src/list/element.php:1090
+#: includes/src/masonry/element.php:1088
+msgid "Padding"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:178
+msgid "Pagination Settings"
+msgstr ""
+
+#: includes/src/grid/element.php:437 includes/src/grid/element.php:553
+#: includes/src/grid/element.php:669 includes/src/grid/element.php:788
+#: includes/src/grid/element.php:890 includes/src/list/element.php:435
+#: includes/src/list/element.php:551 includes/src/list/element.php:667
+#: includes/src/list/element.php:783 includes/src/list/element.php:884
+#: includes/src/masonry/element.php:436 includes/src/masonry/element.php:552
+#: includes/src/masonry/element.php:668 includes/src/masonry/element.php:784
+#: includes/src/masonry/element.php:885
+msgid "Poppins"
+msgstr ""
+
+#: includes/class-blog-post-layouts.php:164
+msgctxt "Poppins font: on or off"
+msgid "on"
+msgstr ""
+
+#: includes/src/grid/element.php:140 includes/src/list/element.php:140
+#: includes/src/masonry/element.php:139
+msgid "Post Count"
+msgstr ""
+
+#: includes/src/grid/element.php:189 includes/src/list/element.php:189
+#: includes/src/masonry/element.php:188
+msgid "Query Setting"
+msgstr ""
+
+#: includes/gutenberg.php:255 includes/gutenberg.php:592
+#: includes/src/grid/element.php:180 includes/src/list/element.php:180
+#: includes/src/masonry/element.php:179
+msgid "Read more"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:174
+msgid "Responsive Design"
+msgstr ""
+
+#: admin/partials/content-review.php:19
+msgid "Review Plugin"
+msgstr ""
+
+#: includes/src/grid/element.php:112 includes/src/grid/element.php:527
+#: includes/src/grid/element.php:643 includes/src/grid/element.php:762
+#: includes/src/grid/element.php:864 includes/src/list/element.php:112
+#: includes/src/list/element.php:525 includes/src/list/element.php:641
+#: includes/src/list/element.php:757 includes/src/list/element.php:858
+#: includes/src/masonry/element.php:111 includes/src/masonry/element.php:526
+#: includes/src/masonry/element.php:642 includes/src/masonry/element.php:758
+#: includes/src/masonry/element.php:859
+msgid "Right"
+msgstr ""
+
+#: includes/src/grid/element.php:434 includes/src/grid/element.php:550
+#: includes/src/grid/element.php:666 includes/src/grid/element.php:785
+#: includes/src/grid/element.php:887 includes/src/list/element.php:432
+#: includes/src/list/element.php:548 includes/src/list/element.php:664
+#: includes/src/list/element.php:780 includes/src/list/element.php:881
+#: includes/src/masonry/element.php:433 includes/src/masonry/element.php:549
+#: includes/src/masonry/element.php:665 includes/src/masonry/element.php:781
+#: includes/src/masonry/element.php:882
+msgid "Roboto"
+msgstr ""
+
+#. If there are characters in your language that are not supported
+#. by Muli font, translate this to 'off'. Do not translate into your own language.
+#: includes/class-blog-post-layouts.php:136 includes/gutenberg.php:147
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#: includes/src/grid/element.php:436 includes/src/grid/element.php:552
+#: includes/src/grid/element.php:668 includes/src/grid/element.php:787
+#: includes/src/grid/element.php:889 includes/src/list/element.php:434
+#: includes/src/list/element.php:550 includes/src/list/element.php:666
+#: includes/src/list/element.php:782 includes/src/list/element.php:883
+#: includes/src/masonry/element.php:435 includes/src/masonry/element.php:551
+#: includes/src/masonry/element.php:667 includes/src/masonry/element.php:783
+#: includes/src/masonry/element.php:884
+msgid "Roboto Slab"
+msgstr ""
+
+#: includes/class-blog-post-layouts.php:157
+msgctxt "Roboto Slab font: on or off"
+msgid "on"
+msgstr ""
+
+#: includes/src/grid/element.php:225 includes/src/grid/element.php:227
+#: includes/src/grid/element.php:239 includes/src/grid/element.php:241
+#: includes/src/grid/element.php:253 includes/src/grid/element.php:255
+#: includes/src/grid/element.php:267 includes/src/grid/element.php:269
+#: includes/src/grid/element.php:281 includes/src/grid/element.php:283
+#: includes/src/grid/element.php:329 includes/src/grid/element.php:331
+#: includes/src/grid/element.php:343 includes/src/grid/element.php:345
+#: includes/src/grid/element.php:373 includes/src/grid/element.php:375
+#: includes/src/grid/element.php:399 includes/src/grid/element.php:401
+#: includes/src/list/element.php:225 includes/src/list/element.php:227
+#: includes/src/list/element.php:239 includes/src/list/element.php:241
+#: includes/src/list/element.php:253 includes/src/list/element.php:255
+#: includes/src/list/element.php:267 includes/src/list/element.php:269
+#: includes/src/list/element.php:281 includes/src/list/element.php:283
+#: includes/src/list/element.php:329 includes/src/list/element.php:331
+#: includes/src/list/element.php:343 includes/src/list/element.php:345
+#: includes/src/list/element.php:371 includes/src/list/element.php:373
+#: includes/src/list/element.php:397 includes/src/list/element.php:399
+#: includes/src/masonry/element.php:224 includes/src/masonry/element.php:226
+#: includes/src/masonry/element.php:238 includes/src/masonry/element.php:240
+#: includes/src/masonry/element.php:252 includes/src/masonry/element.php:254
+#: includes/src/masonry/element.php:266 includes/src/masonry/element.php:268
+#: includes/src/masonry/element.php:280 includes/src/masonry/element.php:282
+#: includes/src/masonry/element.php:328 includes/src/masonry/element.php:330
+#: includes/src/masonry/element.php:342 includes/src/masonry/element.php:344
+#: includes/src/masonry/element.php:372 includes/src/masonry/element.php:374
+#: includes/src/masonry/element.php:398 includes/src/masonry/element.php:400
+msgid "Show"
+msgstr ""
+
+#: includes/src/grid/element.php:237 includes/src/list/element.php:237
+#: includes/src/masonry/element.php:236
+msgid "Show author"
+msgstr ""
+
+#: includes/src/grid/element.php:251 includes/src/list/element.php:251
+#: includes/src/masonry/element.php:250
+msgid "Show categories"
+msgstr ""
+
+#: includes/src/grid/element.php:279 includes/src/list/element.php:279
+#: includes/src/masonry/element.php:278
+msgid "Show comments number"
+msgstr ""
+
+#: includes/src/grid/element.php:223 includes/src/list/element.php:223
+#: includes/src/masonry/element.php:222
+msgid "Show date"
+msgstr ""
+
+#: includes/src/grid/element.php:327 includes/src/list/element.php:327
+#: includes/src/masonry/element.php:326
+msgid "Show post format icon"
+msgstr ""
+
+#: includes/src/grid/element.php:341 includes/src/list/element.php:341
+#: includes/src/masonry/element.php:340
+msgid "Show read more button icon"
+msgstr ""
+
+#: includes/src/grid/element.php:265 includes/src/list/element.php:265
+#: includes/src/masonry/element.php:264
+msgid "Show tags"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:184
+msgid "Show/Hide before/after icons"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:185
+msgid "Show/Hide content"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:183
+msgid "Show/Hide meta"
+msgstr ""
+
+#: includes/src/grid/element.php:988 includes/src/list/element.php:981
+#: includes/src/masonry/element.php:979
+msgid "Solid"
+msgstr ""
+
+#: includes/src/grid/element.php:296 includes/src/list/element.php:296
+#: includes/src/masonry/element.php:295
+msgid "Style Setting"
+msgstr ""
+
+#: admin/partials/content-help.php:29
+msgid "Support"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:173
+msgid "Supports Custom Post Type"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:230
+msgid "Sure"
+msgstr ""
+
+#: includes/src/grid/element.php:100 includes/src/grid/element.php:515
+#: includes/src/grid/element.php:631 includes/src/grid/element.php:750
+#: includes/src/grid/element.php:852 includes/src/list/element.php:100
+#: includes/src/list/element.php:513 includes/src/list/element.php:629
+#: includes/src/list/element.php:745 includes/src/list/element.php:846
+#: includes/src/masonry/element.php:99 includes/src/masonry/element.php:514
+#: includes/src/masonry/element.php:630 includes/src/masonry/element.php:746
+#: includes/src/masonry/element.php:847
+msgid "Text Align"
+msgstr ""
+
+#: wp-blog-post-layouts.php:67
+msgid ""
+"Thank you for choosing %1$s! To fully take advantage of the best our plugin "
+"can offer please make sure you visit our %2$s dashboard page %3$s."
+msgstr ""
+
+#: admin/partials/content-dashboard.php:14
+msgid ""
+"Thank you so much for installing the WP Blog Post Layouts Plugin. We have "
+"designed and developed the most impressive post-layout designs for Gutenberg "
+"and Elementor ! If you have any confusions, please check out our "
+"documentation on below link:"
+msgstr ""
+
+#: includes/src/grid/element.php:89 includes/src/grid/element.php:361
+#: includes/src/list/element.php:89 includes/src/list/element.php:361
+#: includes/src/masonry/element.php:88 includes/src/masonry/element.php:360
+msgid "Three"
+msgstr ""
+
+#: includes/src/grid/element.php:74 includes/src/grid/element.php:202
+#: includes/src/grid/element.php:505 includes/src/grid/element.php:568
+#: includes/src/list/element.php:74 includes/src/list/element.php:202
+#: includes/src/list/element.php:503 includes/src/list/element.php:566
+#: includes/src/masonry/element.php:73 includes/src/masonry/element.php:201
+#: includes/src/masonry/element.php:504 includes/src/masonry/element.php:567
+msgid "Title"
+msgstr ""
+
+#: includes/src/grid/element.php:88 includes/src/grid/element.php:360
+#: includes/src/list/element.php:88 includes/src/list/element.php:360
+#: includes/src/masonry/element.php:87 includes/src/masonry/element.php:359
+msgid "Two"
+msgstr ""
+
+#: includes/src/grid/element.php:389 includes/src/list/element.php:387
+#: includes/src/masonry/element.php:388
+msgid "Typography Section"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:188
+msgid "Upgrade Now"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:270
+msgid "Upgrade To Premium"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Versatile plugin specially designed to create beautiful posts layouts. Fully "
+"compatible with Gutenberg and Elementor. Comes with advanced features such "
+"as multiple archive layout types, typography option and so on."
+msgstr ""
+
+#: admin/partials/content-dashboard.php:36
+msgid "View Demos"
+msgstr ""
+
+#: admin/class-blog-post-layouts-admin.php:192
+msgid ""
+"We have completely free online WordPress resources offers genuine and useful "
+"content helps to build your WordPress knowledge"
+msgstr ""
+
+#. Name of the plugin
+#: admin/class-blog-post-layouts-admin.php:118
+#: admin/class-blog-post-layouts-admin.php:135
+msgid "WP Blog Post Layouts"
+msgstr ""
+
+#: includes/gutenberg.php:194
+msgid "WP Blog Post Layouts Blocks"
+msgstr ""
+
+#: includes/elementor.php:139
+msgid "WP Blog Post Layouts Elements"
+msgstr ""
+
+#: admin/partials/content-help.php:38
+msgid "Wpallresources"
+msgstr ""
+
+#: includes/src/grid/element.php:433 includes/src/grid/element.php:549
+#: includes/src/grid/element.php:665 includes/src/grid/element.php:784
+#: includes/src/grid/element.php:886 includes/src/list/element.php:431
+#: includes/src/list/element.php:547 includes/src/list/element.php:663
+#: includes/src/list/element.php:779 includes/src/list/element.php:880
+#: includes/src/masonry/element.php:432 includes/src/masonry/element.php:548
+#: includes/src/masonry/element.php:664 includes/src/masonry/element.php:780
+#: includes/src/masonry/element.php:881
+msgid "Yanone Kaffeesatz"
+msgstr ""
+
+#. If there are characters in your language that are not supported
+#. by Rubik font, translate this to 'off'. Do not translate into your own language.
+#: includes/class-blog-post-layouts.php:143 includes/gutenberg.php:155
+msgctxt "Yanone Kaffeesatz font: on or off"
+msgid "on"
+msgstr ""

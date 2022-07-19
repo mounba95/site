@@ -1,0 +1,20 @@
+{
+  "name": "wp-magazine-modules-lite",
+  "version": "1.0.0",
+  "description": "Collection of blocks designated to fulfill magazine layouts",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "Codevibrant",
+  "license": "GPL v3",
+  "devDependencies": {
+    "@wordpress/scripts": "^9.1.0"
+  },
+  "dependencies": {
+    "react-masonry-component": "^6.2.1",
+    "react-slick": "^0.26.1",
+    "react-style-tag": "^2.0.1"
+  }
+}

@@ -1,0 +1,570 @@
+/**
+ * Styling for Gutenberg post layout blocks
+ */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cv-clearfix{
+  display: block;
+}
+
+.cv-clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Block Title two */
+
+.cv-block-title{
+  font-size: 32px;
+  position: relative;
+}
+
+ .cv-block-title span{
+   position: relative;
+   display: inline-block;
+ }
+
+ .cv-block-title.align--left {
+ text-align: left;
+}
+
+.cv-block-title.align--center {
+ text-align: center;
+}
+
+.cv-block-title.align--right {
+ text-align: right;
+}
+
+.cv-block-title.layout--two{
+ margin-bottom: 40px;
+}
+
+.cv-block-title.layout--two span::before, 
+.cv-block-title.layout--two span::after {
+ content: "";
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ width: 50px;
+ height: 2px;
+ background: #333;
+ margin-left: -25px;
+}
+
+.cv-block-title.layout--two span::after {
+ left: 50%;
+ width: 30px;
+ margin-left: -15px;
+ bottom: -8px;
+}
+
+.cv-block-title.layout--two.align--left span::before, 
+.cv-block-title.layout--two.align--left span::after {
+ left: 0;
+ margin: 0;
+}
+
+.cv-block-title.layout--two.align--right span::before, 
+.cv-block-title.layout--two.align--right span::after {
+ left: auto;
+ right: 0;
+ margin: 0;
+}
+
+.cv-block-title.layout--three span::before, 
+.cv-block-title.layout--three span::after {
+ content: "";
+ position: absolute;
+ left: -100px;
+ top: 50%;
+ width: 80px;
+ height: 2px;
+ background: #333;
+ margin-top: -1px;
+}
+
+.cv-block-title.layout--three span::after {
+ right: -100px;
+ left: auto;
+}
+
+.cv-block-title.layout--three.align--left span::before{
+ display: none;
+}
+
+.cv-block-title.layout--three.align--right span::after{
+ display: none;
+}
+
+
+/* Block Basic CSS */
+
+.cv-block .cv-post-wrapper {
+ display: flex;
+ flex-wrap: wrap;
+ margin: 0 0 -3% -3%;
+ height: auto;
+ align-items: start;
+}
+
+.cv-block .cv-post-wrapper article {
+ margin: 0 0 3% 3%;
+}
+
+.cv-block .cv-post-wrapper.cv-post-no--imagemargin article,
+.cv-block .cv-post-wrapper.cv-post-no--imagemargin {
+ margin-left: 0;
+}
+
+.cv-block .column--one article {
+ width: 97%;
+}
+
+.cv-block .column--two article {
+ width: 47%;
+}
+
+.cv-block .column--three article {
+ width: 30.33%;
+}
+
+.cv-block .column--four article {
+ width: 22%;
+}
+
+.cv-block .column--five article {
+ width: 17%;
+}
+
+.cv-block .cv-post-no--imagemargin.column--one article {
+ width: 100%;
+}
+
+.cv-block .cv-post-no--imagemargin.column--two article {
+ width: 50%;
+}
+
+.cv-block .cv-post-no--imagemargin.column--three article {
+ width: 33.33%;
+}
+
+.cv-block .cv-post-no--imagemargin.column--four article {
+ width: 25%;
+}
+
+.cv-block .cv-post-no--imagemargin.column--five article {
+ width: 20%;
+}
+
+.cv-post-thumb{
+ position: relative;
+}
+
+.cv-post-title {
+ margin: 15px 0 0px;
+}
+
+.cv-post-title a {
+ font-size: 26px;
+ line-height: 1.5;
+ text-decoration: none;
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+ color: #212121;
+ margin: 0;
+ padding: 0;
+ display: block;
+}
+
+.cv-post-meta .cv-post-meta-item {
+ margin-right: 10px;
+ font-size: 14px;
+ display: inline-block;
+ text-transform: ;
+}
+
+.cv-post-meta .cv-post-meta-item:first-child {
+ margin-left: 0;
+}
+
+.cv-post-tag,
+.cv-post-cat {
+ margin-right: 12px;
+}
+
+.cv-post-tags-wrap.cv-post-meta-item span:last-child {
+ display: none;
+}
+
+.cv-post-tags-wrap.cv-post-meta-item span {
+ display: inline-block;
+ margin: 0 4px;
+}
+
+.cv-post-cat:last-child {
+ margin: 0;
+}
+
+.cv-post-meta {
+ margin-bottom: 12px;
+}
+
+.cv-post-meta .cv-post-meta-item a {
+ color: #333;
+}
+
+.cv-comment-txt {
+ margin-left: 5px;
+}
+
+.cv-post-content {
+ font-family: 'Roboto', sans-serif;
+ font-size: 15px;
+ margin: 10px 0;
+ line-height: 1.8;
+}
+
+.cv-read-more a {
+ color: #333;
+ display: inline-block;
+}
+
+.cv-read-more a i {
+ margin-left: 8px;
+ display: inline-block;
+ -webkit-transition: 0.3s ease;
+ -o-transition: 0.3s ease;
+ transition: 0.3s ease;
+}
+
+.cv-read-more:hover i {
+ margin-left: 12px;
+}
+
+/* Post Format & Post Meta CSS */
+.cv-post.cv-icon .cv-post-thumb::after{
+ content: "\f15c";
+ font-family: "Font Awesome 5 Free";
+ position: absolute;
+ right: 0;
+ top: 0;
+ background: #535353;
+ color: #fff;
+ font-size: 18px;
+ padding: 0 10px;
+}
+
+.cv-post.post-format--quote.cv-icon .cv-post-thumb::after{
+ content: "\f10e";
+ font-family: FontAwesome;
+}
+
+.cv-post.post-format--gallery.cv-icon .cv-post-thumb::after{
+ content: "\f302";
+}
+
+.cv-post.post-format--audio.cv-icon .cv-post-thumb::after{
+ content: "\f1c7";
+}
+
+.cv-post.post-format--video.cv-icon .cv-post-thumb::after{
+ content: "\f1c8";
+}
+
+.cv-post.post-format--image.cv-icon .cv-post-thumb::after{
+ content: "\f03e";
+}
+
+.cv-post-meta > span::before {
+ content: "\f017";
+ font-family: "Font Awesome 5 Free";
+ margin-right: 5px;
+ -webkit-transition: 0.3s ease;
+ -o-transition: 0.3s ease;
+ transition: 0.3s ease;
+}
+
+.cv-post-meta > span.cv-post-author-name::before{
+ content: "\f007";
+}
+
+.cv-post-meta > span.cv-post-tags-wrap::before{
+ content: "\f02e";
+}
+
+.cv-post-meta > span.cv-post-comments-wrap::before{
+ content: "\f075";
+}
+
+.cv-post-meta.cv-meta-icon-hide span::before{
+ display: none;
+}
+
+/* Grid layout two */
+
+.cv-block-grid--layout-two article {
+ text-align: center;
+}
+
+.cv-block.cv-block-grid--layout-two .cv-post-wrapper article {
+ background: #fafafa;
+ padding: 0 20px 30px 20px;
+}
+
+.cv-block-grid--layout-two .cv-post-thumb{
+ position: relative;
+ margin: 0 -20px;
+}
+
+.cv-block-grid--layout-two .cv-post-cats-wrap,
+.cv-block-list--layout-three .cv-post-cats-wrap{
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ padding: 15px;
+}
+
+.cv-block-grid--layout-two .cv-post-cat,
+.cv-block-list--layout-three .cv-post-cat{
+ display: inline-block;
+ margin-right: 3px;
+}
+
+.cv-block-grid--layout-two .cv-post-cat a,
+.cv-block-list--layout-three .cv-post-cat a{
+ background: #333;
+ color: #fff !important;
+ display: block;
+ padding: 0px 10px;
+ font-size: 12px;
+}
+
+.cv-block-grid--layout-two .cv-post-cat a:hover,
+.cv-block-list--layout-three .cv-post-cat a:hover {
+ background: #565656;
+}
+
+.cv-block-grid--layout-two .cv-post-meta {
+ margin: 20px 0 0;
+}
+
+.cv-block-grid--layout-two .cv-post-title {
+ margin: 10px 0 20px;
+ position: relative;
+}
+
+.cv-block-grid--layout-two .cv-post-title::after {
+ content: "";
+ width: 40px;
+ height: 2px;
+ background: #333;
+ position: absolute;
+ bottom: 0;
+ left: 50%;
+ margin-left: -20px;
+}
+
+.cv-block-grid--layout-two .cv-read-more a {
+ border: 1px solid #9D9D9D;
+ display: inline-block;
+ padding: 3px 20px;
+ margin-top: 15px;
+}
+
+/* Grid layout three */
+
+.cv-block-grid--layout-three .cv-post-thumb {
+ position: relative;
+ margin-top: 20px;
+}
+
+.cv-block-grid--layout-three .cv-post-date {
+ position: absolute;
+ top: -20px;
+ right: 20px;
+}
+
+.cv-block-grid--layout-three .cv-post-date a {
+ color: #fff !important;
+ background: #333;
+ display: block;
+ width: 70px;
+ font-size: 18px;
+ text-align: center;
+ line-height: 1.2;
+ font-weight: 700;
+ padding: 15px 10px;
+}
+
+.cv-block-grid--layout-three .cv-post-cat-tag-wrap {
+ margin-top: 20px;
+}
+
+.cv-block-grid--layout-three .cv-post-cats-wrap {
+ float: left;
+}
+
+.cv-block-grid--layout-three .cv-post-tags-wrap {
+ float: right;
+}
+
+.cv-block-grid--layout-three .cv-post-title {
+ margin-top: 0;
+}
+
+.cv-block-grid--layout-three .cv-author-thumb,
+.cv-block-list--layout-three .cv-author-thumb{
+ width: 50px;
+ display: inline-block;
+ height: 50px;
+ border-radius: 100%;
+ overflow: hidden;
+ border: 1px solid #e1e1e1;
+ vertical-align: middle;
+ margin-right: 7px;
+}
+
+.cv-block-grid--layout-three .cv-post-meta .cv-post-comments-wrap.cv-post-meta-item,
+.cv-block-list--layout-three .cv-post-meta .cv-post-comments-wrap.cv-post-meta-item {
+ float: right;
+ margin: 10px 0;
+}
+
+.cv-block-grid--layout-three  .cv-post-meta {
+ margin: 20px 0;
+}
+
+.cv-block-grid--layout-three .cv-post-tags-wrap a {
+ color: #333;
+ font-size: 14px;
+}
+
+.cv-block-grid--layout-three .cv-post.cv-icon .cv-post-thumb::after{
+ right: auto;
+ left: 0;
+}
+
+.cv-block-grid--layout-three .cv-post-meta > span.cv-author-meta::before {
+ display: none;
+}
+
+.cv-block-grid--layout-three .cv-post-cats-wrap a {
+ color: #636363;
+}
+
+
+/**
+* Styling for gutenberg list post layout blocks
+*/
+
+.cv-post-left-wrap {
+ display: inline-block;
+ vertical-align: middle;
+ width: 40%;
+}
+
+.cv-post-right-wrap {
+ display: inline-block;
+ width: 55%;
+ margin-left: 3%;
+ margin-right: -4px;
+ vertical-align: middle;
+}
+
+.cv-block-list--layout-two .cv-post-right-wrap {
+ width: 60%;
+ margin-left: -100px;
+ background: #fff;
+ padding: 30px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ position: relative;
+ z-index: 99;
+}
+
+.cv-block-list--layout-two .cv-post-cat a {
+ border: 1px solid;
+ padding: 0px 10px;
+ display: inline-block;
+ font-size: 13px;
+}
+
+/* Grid layout three  */
+
+.cv-block-list--layout-three article {
+ background: #f9f9f9;
+}
+
+.cv-block-list--layout-three .cv-post-thumb{
+ position: relative;
+}
+
+.cv-block-list--layout-three .cv-post-meta {
+ margin-top: 20px;
+ padding-top: 20px;
+ border-top: 1px solid #e1e1e1;
+ margin-bottom: 0;
+}
+
+.cv-block-list--layout-three .cv-post-date {
+ position: absolute;
+ top: 20px;
+ left: 20px;
+}
+
+.cv-block-list--layout-three .cv-post-right-wrap {
+ width: 54%;
+}
+
+.cv-block-list--layout-three .cv-author-meta:before{
+ display: none;
+}
+
+/* Responsive CSS  */
+@media (max-width:768px) {
+.cv-block article {
+ width: 47% !important;
+}
+
+.cv-block .column--one article {
+ width: 497% !important;
+}
+.cv-block .cv-post-wrapper article {
+ margin-bottom: 8%;
+}
+.cv-post-right-wrap,
+.cv-post-left-wrap {
+ width: 100%;
+ margin-left: 0;
+ display: block;
+}
+
+.cv-block-list--layout-two .cv-post-right-wrap,
+.cv-block-list--layout-three .cv-post-right-wrap {
+ width: 100%;
+ margin-left: 0;
+}
+
+.cv-block-list--layout-three .cv-post-right-wrap {
+ padding: 10px 30px 30px;
+}
+.cv-block-list--layout-five .cv-post-title-meta-wrap {
+ position: static;
+ width: 100%;
+}
+}
+
+@media (max-width:600px) {
+.cv-block article {
+ width: 97% !important;
+}
+.cv-block .cv-post-wrapper article {
+ margin-bottom: 8%;
+}
+
+}
