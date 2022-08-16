@@ -1034,15 +1034,37 @@ class WPForms_Frontend {
 	 */
 	public function foot( $form_data, $deprecated, $title, $description, $errors ) {
 
-		$form_id    = absint( $form_data['id'] );
-		$settings   = $form_data['settings'];
-		$submit     = apply_filters( 'wpforms_field_submit', $settings['submit_text'], $form_data );
+		$form_id  = absint( $form_data['id'] );
+		$settings = $form_data['settings'];
+
+		/**
+		 * Filter form submit button text.
+		 *
+		 * @since 1.0.0
+		 *
+		 * @param string $submit_text Submit button text.
+		 * @param array  $form_data   Form data.
+		 */
+		$submit = apply_filters( 'wpforms_field_submit', $settings['submit_text'], $form_data ); // phpcs:ignore WPForms.PHP.ValidateHooks.InvalidHookName
+
 		$attrs      = [
 			'aria-live' => 'assertive',
 			'value'     => 'wpforms-submit',
 		];
 		$data_attrs = [];
-		$classes    = [ 'wpforms-submit' ];
+
+		/**
+		 * Filter form submit button classes.
+		 *
+		 * @since 1.7.5.3
+		 *
+		 * @param array $classes   Button classes.
+		 * @param array $form_data Form data.
+		 */
+		$classes = (array) apply_filters( 'wpforms_frontend_foot_submit_classes', [], $form_data );
+
+		// A lot of our frontend logic is dependent on this class, so we need to make sure it's present.
+		$classes = array_merge( $classes, [ 'wpforms-submit' ] );
 
 		// Check for submit button alt-text.
 		if ( ! empty( $settings['submit_text_processing'] ) ) {
@@ -1153,10 +1175,12 @@ class WPForms_Frontend {
 		 * Runs right after form Submit button rendering.
 		 *
 		 * @since 1.5.0
+		 * @since 1.7.5 Added new parameter for detecting button type.
 		 *
-		 * @param array $form_data Form data.
+		 * @param array  $form_data Form data.
+		 * @param string $button    Button type, e.g. `submit`, `next`.
 		 */
-		do_action( 'wpforms_display_submit_after', $form_data );
+		do_action( 'wpforms_display_submit_after', $form_data, 'submit' ); // phpcs:ignore WPForms.PHP.ValidateHooks.InvalidHookName
 
 		echo '</div>';
 
@@ -1244,13 +1268,13 @@ class WPForms_Frontend {
 		) {
 			wp_enqueue_style(
 				'wpforms-jquery-timepicker',
-				WPFORMS_PLUGIN_URL . 'assets/css/jquery.timepicker.css',
+				WPFORMS_PLUGIN_URL . 'assets/lib/jquery.timepicker/jquery.timepicker.min.css',
 				[],
 				'1.11.5'
 			);
 			wp_enqueue_style(
 				'wpforms-flatpickr',
-				WPFORMS_PLUGIN_URL . 'assets/css/flatpickr.min.css',
+				WPFORMS_PLUGIN_URL . 'assets/lib/flatpickr/flatpickr.min.css',
 				[],
 				'4.6.9'
 			);
@@ -1300,9 +1324,9 @@ class WPForms_Frontend {
 		// Load jQuery validation library - https://jqueryvalidation.org/.
 		wp_enqueue_script(
 			'wpforms-validation',
-			WPFORMS_PLUGIN_URL . 'assets/js/jquery.validate.min.js',
+			WPFORMS_PLUGIN_URL . 'assets/lib/jquery.validate.min.js',
 			[ 'jquery' ],
-			'1.19.3',
+			'1.19.4',
 			true
 		);
 
@@ -1314,14 +1338,14 @@ class WPForms_Frontend {
 		) {
 			wp_enqueue_script(
 				'wpforms-flatpickr',
-				WPFORMS_PLUGIN_URL . 'assets/js/flatpickr.min.js',
+				WPFORMS_PLUGIN_URL . 'assets/lib/flatpickr/flatpickr.min.js',
 				[ 'jquery' ],
 				'4.6.9',
 				true
 			);
 			wp_enqueue_script(
 				'wpforms-jquery-timepicker',
-				WPFORMS_PLUGIN_URL . 'assets/js/jquery.timepicker.min.js',
+				WPFORMS_PLUGIN_URL . 'assets/lib/jquery.timepicker/jquery.timepicker.min.js',
 				[ 'jquery' ],
 				'1.11.5',
 				true
@@ -1336,7 +1360,7 @@ class WPForms_Frontend {
 		) {
 			wp_enqueue_script(
 				'wpforms-maskedinput',
-				WPFORMS_PLUGIN_URL . 'assets/js/jquery.inputmask.min.js',
+				WPFORMS_PLUGIN_URL . 'assets/lib/jquery.inputmask.min.js',
 				[ 'jquery' ],
 				'5.0.7-beta.29',
 				true
@@ -1350,7 +1374,7 @@ class WPForms_Frontend {
 		) {
 			wp_enqueue_script(
 				'wpforms-mailcheck',
-				WPFORMS_PLUGIN_URL . 'assets/js/mailcheck.min.js',
+				WPFORMS_PLUGIN_URL . 'assets/lib/mailcheck.min.js',
 				false,
 				'1.1.2',
 				true
@@ -1358,24 +1382,9 @@ class WPForms_Frontend {
 
 			wp_enqueue_script(
 				'wpforms-punycode',
-				WPFORMS_PLUGIN_URL . "assets/js/punycode{$min}.js",
+				WPFORMS_PLUGIN_URL . 'assets/lib/punycode.min.js',
 				[],
 				'1.0.0',
-				true
-			);
-		}
-
-		// Load CC payment library - https://github.com/stripe/jquery.payment/.
-		// TODO: should be moved out of here.
-		if (
-			$this->assets_global() ||
-			wpforms_has_field_type( 'credit-card', $this->forms, true )
-		) {
-			wp_enqueue_script(
-				'wpforms-payment',
-				WPFORMS_PLUGIN_URL . 'assets/js/jquery.payment.min.js',
-				[ 'jquery' ],
-				WPFORMS_VERSION,
 				true
 			);
 		}

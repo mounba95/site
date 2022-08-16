@@ -221,8 +221,7 @@ $_module_preset = ! empty( $term->meta['_module_preset'][0] ) ? $term->meta['_mo
 							</span>
 						</div>
 					</div>
-					<div class="gm-img-thumbnail gmedia-cover-image">
-						<?php
+					<div class="gm-img-thumbnail gmedia-cover-image"><?php
 						$cover_id = intval( $cover_id );
 						if ( $cover_id ) {
 							$cover = $gmDB->get_gmedia( $cover_id );
@@ -234,8 +233,7 @@ $_module_preset = ! empty( $term->meta['_module_preset'][0] ) ? $term->meta['_mo
 								echo '<strong class="text-danger">' . esc_html__( 'No image with such ID', 'grand-media' ) . '</strong>';
 							}
 						}
-						?>
-					</div>
+						?></div>
 				</div>
 			</div>
 		</div>

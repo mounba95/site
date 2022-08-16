@@ -20,7 +20,7 @@ final class ThemeGrill_Demo_Importer {
 	 *
 	 * @var string
 	 */
-	public $version = '1.8.0';
+	public $version = '1.8.3';
 
 	/**
 	 * Theme single instance of this class.
@@ -147,6 +147,8 @@ final class ThemeGrill_Demo_Importer {
 			'elearning',
 			'online-education',
 			'skincare',
+			'estory',
+			'libreria',
 		);
 		// Check for official core themes pro version.
 		$pro_themes = array_diff( $core_themes, array( 'explore', 'masonic' ) );

@@ -3767,16 +3767,26 @@ class GmediaCore {
 	/**
 	 * Recursive sanitation for an array
 	 *
+	 * @param string $input
+	 *
+	 * @return string
+	 */
+	public function sanitize_post_field( $input ) {
+		$r = str_replace( '&', '_å_', $input );
+		$r = wp_kses_post( $r );
+		return str_replace( '_å_', '&', $r );
+	}
+
+	/**
+	 * Recursive sanitation for an array
+	 *
 	 * @param string|array $input
 	 *
 	 * @return string|array
 	 */
 	public function sanitize_post_field_deep( $input ) {
-		if ( ! is_array( $input ) ) {
-			return wp_kses_post( $input );
-		}
 
-		return wp_kses_post_deep( $input );
+		return map_deep( $input, array( $this, 'sanitize_post_field' ) );
 	}
 
 	/**

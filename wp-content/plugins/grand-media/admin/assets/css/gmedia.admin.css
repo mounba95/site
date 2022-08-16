@@ -2289,8 +2289,7 @@ select[multiple].form-group-sm .form-control {
 .input-group-xs > .input-group-text,
 .input-group-xs > .input-group-btn > .btn,
 .input-group-sm > .form-control,
-.input-group-sm > .input-group-text,
-.input-group-sm > .input-group-btn > .btn {
+.input-group-sm > .input-group-text {
 	padding: 1px 5px;
 	font-size: 12px;
 	line-height: 1.5;
@@ -2301,8 +2300,7 @@ select.input-group-xs > .form-control,
 select.input-group-xs > .input-group-text,
 select.input-group-xs > .input-group-btn > .btn,
 select.input-group-sm > .form-control,
-select.input-group-sm > .input-group-text,
-select.input-group-sm > .input-group-btn > .btn {
+select.input-group-sm > .input-group-text {
 	line-height: 22px;
 }
 
@@ -2316,8 +2314,7 @@ textarea.input-group-sm > .form-control,
 textarea.input-group-sm > .input-group-text,
 textarea.input-group-sm > .input-group-btn > .btn,
 select[multiple].input-group-sm > .form-control,
-select[multiple].input-group-sm > .input-group-text,
-select[multiple].input-group-sm > .input-group-btn > .btn {
+select[multiple].input-group-sm > .input-group-text {
 	height: auto;
 }
 

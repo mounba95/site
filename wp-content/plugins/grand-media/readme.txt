@@ -139,6 +139,10 @@ Use [Gmedia Support Forum](https://codeasily.com/community/forum/gmedia-gallery-
 = Modules Updated =
 * Go to Gmedia Modules page and update installed premium modules to latest versions
 
+= v1.21.9 =
+* Fix gallery query saving
+* Improve admin styling
+
 = v1.21.8 =
 * Fix saving title with ampersand
 * Fix display some modues in preview

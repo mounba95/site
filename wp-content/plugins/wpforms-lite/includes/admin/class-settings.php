@@ -141,9 +141,12 @@ class WPForms_Settings {
 						$value = (float) $value;
 						break;
 
-					case 'text':
 					case 'radio':
 					case 'select':
+						$value = $this->validate_field_with_options( $field, $value, $value_prev );
+						break;
+
+					case 'text':
 					default:
 						$value = sanitize_text_field( $value );
 						break;
@@ -273,7 +276,7 @@ class WPForms_Settings {
 					'name'      => esc_html__( 'Include Form Styling', 'wpforms-lite' ),
 					'desc'      => sprintf(
 						wp_kses( /* translators: %s - WPForms.com form styling setting URL. */
-							__( 'Determines which CSS files to load and use for the site (<a href="%s" target="_blank" rel="noopener noreferrer">please see our tutorial for full details</a>). "Base and Form Theme Styling" is recommended, unless you are experienced with CSS or instructed by support to change settings. ', 'wpforms-lite' ),
+							__( 'Determines which CSS files to load and use for the site (<a href="%s" target="_blank" rel="noopener noreferrer">please see our tutorial for full details</a>). "Base and Form Theme Styling" is recommended, unless you are experienced with CSS or instructed by support to change settings.', 'wpforms-lite' ),
 							[
 								'a' => [
 									'href'   => [],
@@ -403,12 +406,6 @@ class WPForms_Settings {
 					'name'    => esc_html__( 'Required', 'wpforms-lite' ),
 					'type'    => 'text',
 					'default' => esc_html__( 'This field is required.', 'wpforms-lite' ),
-				],
-				'validation-url'                   => [
-					'id'      => 'validation-url',
-					'name'    => esc_html__( 'Website URL', 'wpforms-lite' ),
-					'type'    => 'text',
-					'default' => esc_html__( 'Please enter a valid URL.', 'wpforms-lite' ),
 				],
 				'validation-email'                 => [
 					'id'      => 'validation-email',
@@ -657,6 +654,28 @@ class WPForms_Settings {
 		}
 
 		$meta->create_table();
+	}
+
+	/**
+	 * Validate radio and select fields.
+	 *
+	 * @since 1.7.5.5
+	 *
+	 * @param array $field      Field.
+	 * @param mixed $value      Value.
+	 * @param mixed $value_prev Previous value.
+	 *
+	 * @return mixed
+	 */
+	private function validate_field_with_options( $field, $value, $value_prev ) {
+
+		$value = sanitize_text_field( $value );
+
+		if ( isset( $field['options'] ) && array_key_exists( $value, $field['options'] ) ) {
+			return $value;
+		}
+
+		return isset( $field['default'] ) ? $field['default'] : $value_prev;
 	}
 }
 

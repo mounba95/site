@@ -179,12 +179,19 @@ class Help {
 		// Unfortunately, we need to call setup() here for properly scheduled execution.
 		$this->setup();
 
+		$wpforms_key = 'lite';
+
+		if ( wpforms()->is_pro() ) {
+			$wpforms_key = wpforms_get_license_key();
+		}
+
 		$request = wp_remote_get(
-			$this->settings['docs_remote_source'],
+			add_query_arg( 'tgm-updater-key', $wpforms_key, $this->settings['docs_remote_source'] ),
 			[
 				// Limit the processing time to half of the default PHP max execution time,
-				// so we will have a chance to see the Form Builder even without the docs data.
-				'timeout' => 15,
+				// so users will have a chance to see the Form Builder even without the docs data.
+				'timeout'    => 15,
+				'user-agent' => wpforms_get_default_user_agent(),
 			]
 		);
 
@@ -250,9 +257,12 @@ class Help {
 		return [
 			'getting-started' => esc_html__( 'Getting Started', 'wpforms-lite' ),
 			'functionality'   => esc_html__( 'Functionality', 'wpforms-lite' ),
+			'fields'          => esc_html__( 'Fields', 'wpforms-lite' ),
+			'addons'          => esc_html__( 'Addons', 'wpforms-lite' ),
+			'payments'        => esc_html__( 'Payments', 'wpforms-lite' ),
+			'entries'         => esc_html__( 'Entries', 'wpforms-lite' ),
 			'styling'         => esc_html__( 'Styling', 'wpforms-lite' ),
 			'extending'       => esc_html__( 'Extending', 'wpforms-lite' ),
-			'addons'          => esc_html__( 'Addons', 'wpforms-lite' ),
 		];
 	}
 
@@ -328,6 +338,7 @@ class Help {
 			'providers/getresponse_v3'                           => 'getresponse',
 			'providers/mailchimp'                                => 'mailchimp',
 			'providers/mailchimpv3'                              => 'mailchimp',
+			'providers/mailerlite'                               => 'mailerlite',
 			'providers/zapier'                                   => 'zapier',
 			'providers/salesforce'                               => 'salesforce',
 			'providers/sendinblue'                               => 'sendinblue',
@@ -1150,6 +1161,9 @@ class Help {
 			],
 			'mailchimp'                 => [
 				'/docs/install-use-mailchimp-addon-wpforms/',
+			],
+			'mailerlite'                => [
+				'/docs/install-use-mailerlite-addon-wpforms/',
 			],
 			'zapier'                    => [
 				'/docs/how-to-install-and-use-zapier-addon-with-wpforms/',

@@ -161,7 +161,6 @@ class FTS_Facebook_Options_Page {
 
                             <input type="text" name="fts_facebook_custom_api_token" class="feed-them-social-admin-input" id="fts_facebook_custom_api_token" data-token="<?php echo $check_custom_encrypted ?>" value="<?php echo $check_custom_token_value ?>" />
 
-
 							<div class="clear"></div>
 
 							<input type="text" hidden name="fts_facebook_custom_api_token_user_name" class="feed-them-social-admin-input" id="fts_facebook_custom_api_token_user_name" value="<?php echo esc_attr( get_option( 'fts_facebook_custom_api_token_user_name' ) ); ?>"/>
@@ -232,7 +231,6 @@ class FTS_Facebook_Options_Page {
 								// Echo our shortcode for the page token list with loadmore button
 								// These functions are on feed-them-functions.php!
 								echo do_shortcode( '[fts_fb_page_token]' );
-
 							}
 							?>
 						</div>

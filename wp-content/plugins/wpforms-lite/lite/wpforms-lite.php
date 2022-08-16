@@ -14,7 +14,7 @@ class WPForms_Lite {
 	/**
 	 * Primary class constructor.
 	 *
-	 * @since 1.2.x
+	 * @since 1.2.2
 	 */
 	public function __construct() {
 
@@ -299,7 +299,7 @@ class WPForms_Lite {
 		// Admin styles.
 		wp_enqueue_style(
 			'wpforms-lite-admin',
-			WPFORMS_PLUGIN_URL . "lite/assets/css/admin{$min}.css",
+			WPFORMS_PLUGIN_URL . "assets/lite/css/admin{$min}.css",
 			array(),
 			WPFORMS_VERSION
 		);
@@ -462,7 +462,7 @@ class WPForms_Lite {
 
 		wp_enqueue_script(
 			'wpforms-builder-lite',
-			WPFORMS_PLUGIN_URL . "lite/assets/js/admin-builder-lite{$min}.js",
+			WPFORMS_PLUGIN_URL . "assets/lite/js/admin-builder-lite{$min}.js",
 			[ 'jquery', 'jquery-confirm' ],
 			WPFORMS_VERSION,
 			false
@@ -514,7 +514,7 @@ class WPForms_Lite {
 				<?php
 				printf(
 					wp_kses( /* translators: %s - star icons. */
-						__( 'We know that you will truly love WPForms. It has over 10,000+ five star ratings (%s) and is active on over 5 million websites.', 'wpforms-lite' ),
+						__( 'We know that you will truly love WPForms. It has over 11,000+ five star ratings (%s) and is active on over 5 million websites.', 'wpforms-lite' ),
 						[
 							'i' => [
 								'class'       => [],
@@ -529,14 +529,14 @@ class WPForms_Lite {
 			<h6><?php esc_html_e( 'Pro Features:', 'wpforms-lite' ); ?></h6>
 			<div class="list">
 				<ul>
-					<li><?php esc_html_e( '300+ customizable form templates', 'wpforms-lite' ); ?></li>
+					<li><?php esc_html_e( '400+ customizable form templates', 'wpforms-lite' ); ?></li>
 					<li><?php esc_html_e( 'Store and manage form entries in WordPress', 'wpforms-lite' ); ?></li>
 					<li><?php esc_html_e( 'Unlock all fields & features, including Rich Text & conditional logic', 'wpforms-lite' ); ?></li>
 					<li><?php esc_html_e( 'Make Surveys and Polls and create reports', 'wpforms-lite' ); ?></li>
 					<li><?php esc_html_e( 'Accept user-submitted content with the Post Submissions addon', 'wpforms-lite' ); ?></li>
 				</ul>
 				<ul>
-					<li><?php esc_html_e( '500+ integrations with marketing and payment services', 'wpforms-lite' ); ?></li>
+					<li><?php esc_html_e( '5000+ integrations with marketing and payment services', 'wpforms-lite' ); ?></li>
 					<li><?php esc_html_e( 'Let users Save and Resume submissions to prevent abandonment', 'wpforms-lite' ); ?></li>
 					<li><?php esc_html_e( 'Take payments with Stripe, Square, Authorize.Net, and PayPal', 'wpforms-lite' ); ?></li>
 					<li><?php esc_html_e( 'Collect signatures, geolocation data, and file uploads', 'wpforms-lite' ); ?></li>
@@ -840,26 +840,6 @@ class WPForms_Lite {
 							<a href="<?php echo esc_url( wpforms_admin_upgrade_link( 'entries' ) ); ?>" class="wpforms-btn wpforms-btn-lg wpforms-btn-orange wpforms-upgrade-modal" target="_blank" rel="noopener noreferrer">
 								<?php esc_html_e( 'Upgrade to WPForms Pro Now', 'wpforms-lite' ); ?>
 							</a>
-
-							<?php
-								if ( $is_lite_connect_allowed ) {
-									echo '<p>';
-									esc_html_e( 'Not ready to upgrade?', 'wpforms-lite' );
-
-									// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-									echo wpforms_panel_field_toggle_control(
-										[
-											'control-class' => 'wpforms-setting-lite-connect-auto-save-toggle',
-										],
-										'wpforms-setting-lite-connect-enabled',
-										'',
-										esc_html__( 'Enable Form Entry Backups for free', 'wpforms-lite' ),
-										$is_lite_connect_enabled,
-										''
-									);
-									echo '</p>';
-								}
-							?>
 
 						<?php endif; ?>
 					</div>
@@ -1270,7 +1250,7 @@ class WPForms_Lite {
 		);
 	}
 
-	/*
+	/**
 	 * Handle plugin installation upon activation.
 	 *
 	 * @since 1.7.4
